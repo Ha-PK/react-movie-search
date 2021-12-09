@@ -1,0 +1,31 @@
+.suggestion {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 6px 0;
+  border-radius: 4px;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.suggestion::before {
+  content: "";
+  display: block;
+  border: 8px solid transparent;
+  border-color: transparent transparent rgba(255, 255, 255, 0.5) transparent;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.suggestion-link {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.suggestion-link:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
